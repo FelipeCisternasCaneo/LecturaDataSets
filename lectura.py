@@ -1,6 +1,9 @@
 from Problem.FS.Problem import FeatureSelection as fs
 
 # instancias utilizadas
-instancia = ['ionosphere', 'sonar', 'Divorce', 'breast-cancer-wisconsin', 'wdbc']
+instancias = ['ionosphere', 'sonar', 'Divorce', 'breast-cancer-wisconsin', 'wdbc']
 
-instance = fs(instancia)
+for instancia in instancias:
+    instance = fs(instancia)
+    print(instance.getDatos())
+    print(instance.getClases())
